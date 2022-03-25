@@ -42,7 +42,7 @@ function checkAnswer(num){
   }
   else{
     console.log("FAIL");
-    var aud=new Audio("/wrong.mp3");
+    var aud=new Audio("wrong.mp3");
     aud.play();
     $("body").addClass("game-over");
     setTimeout(function()
@@ -95,7 +95,7 @@ function nextSequence() {
 }
 
 function playSound(name) {
-  var aud = new Audio("/" + name + ".mp3");
+  var aud = new Audio( + name + ".mp3");
   aud.play();
 }
 
